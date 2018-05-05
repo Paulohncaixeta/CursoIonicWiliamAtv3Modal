@@ -1,0 +1,29 @@
+<div class = "modal-container">
+
+
+  <ion-navbar>
+    <ion-title>
+      Modal
+    </ion-title>
+    <ion-buttons end>
+      <button ion-Button clear color="dark" icon-only (click)="fecharModal()"> 
+        <ion-icon name="md-close" ></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+
+<ion-content class="conteudo">
+    
+  <ion-item>
+    <ion-label floating>Digite seu Pin</ion-label>
+      <ion-input [(ngModel)]="text"></ion-input>
+  </ion-item>
+
+  <button ion-Button (click)="SalvarPin()"> Validar Pin </button>
+
+  {{retorno}}
+
+</ion-content>
+
+</div>
